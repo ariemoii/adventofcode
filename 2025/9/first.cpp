@@ -23,11 +23,11 @@ using namespace std;
 constexpr int INF = INT_MAX;
 constexpr ll LLINF = LONG_LONG_MAX;
 
-struct redBox {
+struct Point {
   long long x, y;
 };
 
-vector<redBox> redBoxes;
+vector<Point> redBoxes;
 
 vl areas;
 
@@ -49,7 +49,7 @@ void printBoxes() {
   }
 }
 
-ll calcArea(redBox a, redBox b) {
+ll calcArea(Point a, Point b) {
   return (abs(a.x - b.x) + 1) * (abs(a.y - b.y) + 1);
 }
 
